@@ -83,7 +83,12 @@ dados_empiricos = pd.DataFrame({
 # Barra Lateral (Controles e Parâmetros)
 # ==========================================
 with st.sidebar:
-    st.image("https://img.shields.io/badge/FIAP-DPS%20Checkpoint%204-blue?style=for-the-badge", use_container_width=True)
+    st.markdown("""
+    <div style="background-color: #1E3A8A; color: white; padding: 8px 12px; border-radius: 6px; font-weight: bold; text-align: center; margin-bottom: 15px;">
+        🎓 FIAP — DPS Checkpoint 4 (2026)
+    </div>
+    """, unsafe_allow_html=True)
+    
     st.title("⚙️ Parâmetros da API")
     st.markdown("Ajuste a carga simulada e os parâmetros de infraestrutura.")
     
@@ -109,15 +114,15 @@ with st.sidebar:
     
     st.divider()
     st.markdown("### 📌 Contexto da Empresa")
-    st.markdown("""
+    st.markdown(r"""
     **API:** *vivoCloud Storage Service*  
     **Empresa:** JOVI (Vivo)  
-    **Capacidade Teórica ($\mu$):** $50\\text{ req/s}$  
-    **Latência em Repouso ($f(0)$):** $20\\text{ ms}$
+    **Capacidade Teórica ($\mu$):** $50\text{ req/s}$  
+    **Latência em Repouso ($f(0)$):** $20\text{ ms}$
     """)
     
     st.divider()
-    st.markdown("### 👥 Integrantes")
+    st.markdown("### 👥 Integrantes do Grupo")
     st.markdown("""
     - **Thiago Gomes Nascimento** (RM 569436)
     - **Gabriel Henrique Ongarelli Reis** (RM 572636)
@@ -126,7 +131,7 @@ with st.sidebar:
     - **Eduardo Felix Frois Silva** (RM 574103)
     """)
     
-    st.info("💡 **Dica Técnica:** O colapso assintótico ocorre em $x \\to 50^-$, onde a fila cresce infinitamente.")
+    st.info(r"💡 **Dica Técnica:** O colapso assintótico ocorre em $x \to 50^-$, onde a fila cresce infinitamente.")
 
 # ==========================================
 # Cabeçalho Principal
@@ -181,7 +186,7 @@ with col3:
     )
 
 with col4:
-    st.markdown(f"**Status Operacional:**")
+    st.markdown("**Status Operacional:**")
     st.markdown(f'<div class="{zona_classe}">{zona_nome}</div>', unsafe_allow_html=True)
     if tempo_calculado > sla_limite:
         st.error(f"❌ **SLA Violado!** ({tempo_calculado:.1f} ms > {sla_limite} ms)")
@@ -280,7 +285,7 @@ with tab_sim:
         height=550
     )
     
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig)
     
     # Caixa explicativa da simulação
     st.markdown(f"""
@@ -359,10 +364,10 @@ with tab_table:
         })
         
     df_resultado = pd.DataFrame(tabela_dados)
-    st.dataframe(df_resultado, use_container_width=True)
+    st.dataframe(df_resultado)
     
-    st.markdown("""
-    **💡 Observação Chave:** Note como a variação de $48.0$ para $49.9\\text{ req/s}$ (apenas $+1.9\\text{ req/s}$) faz a latência saltar de **500 ms** para **10.000 ms** ($10\\text{ segundos}$)! 
+    st.markdown(r"""
+    **💡 Observação Chave:** Note como a variação de $48.0$ para $49.9\text{ req/s}$ (apenas $+1.9\text{ req/s}$) faz a latência saltar de **500 ms** para **10.000 ms** ($10\text{ segundos}$)! 
     Isso evidencia a natureza não-linear e explosiva da curva assintótica.
     """)
 
@@ -375,24 +380,24 @@ with tab_arch:
     col_a, col_b = st.columns(2)
     
     with col_a:
-        st.markdown("""
+        st.markdown(r"""
         ### 🛡️ 1. Governança de Tráfego & Resiliência
-        - **Rate Limiting (HTTP 429):** Configurar políticas estritas de limitação de taxa (algoritmos *Token Bucket* ou *Leaky Bucket*) para descartar requisições quando a carga por nó ultrapassar $35\\text{ req/s}$.
+        - **Rate Limiting (HTTP 429):** Configurar políticas estritas de limitação de taxa (algoritmos *Token Bucket* ou *Leaky Bucket*) para descartar requisições quando a carga por nó ultrapassar $35\text{ req/s}$.
         - **Circuit Breaker:** Implementar o padrão Circuit Breaker (ex.: Resilience4j ou Istio Service Mesh) para abrir o circuito e evitar falhas em cascata quando o tempo de resposta ultrapassar o SLA.
         - **Filas Assíncronas:** Desacoplar operações pesadas de gravação na nuvem usando corretores de mensagens (RabbitMQ / Apache Kafka / AWS SQS).
         """)
         
     with col_b:
-        st.markdown("""
+        st.markdown(r"""
         ### 🚀 2. Escalabilidade & Otimização
-        - **Autoscaling Horizontal (HPA):** Dimensionar novos pods/instâncias no Kubernetes quando a utilização da CPU/taxa de requisições atingir **$70\\%$ da capacidade nominal ($35\\text{ req/s}$)**.
+        - **Autoscaling Horizontal (HPA):** Dimensionar novos pods/instâncias no Kubernetes quando a utilização da CPU/taxa de requisições atingir **$70\%$ da capacidade nominal ($35\text{ req/s}$)**.
         - **Balanceamento de Carga Inteligente:** Configurar balanceadores (NGINX / AWS ALB) com algoritmo *Least Connections* para distribuir a carga uniformemente entre réplicas.
         - **Camada de Cache Distribuído:** Integrar Redis / Memcached para responder a consultas de leitura repetidas sem onerar a CPU da API principal.
         """)
         
-    st.info("""
-    **🎯 Conclusão Executiva:** Capacidade teórica ($50\\text{ req/s}$) NÃO é capacidade operacional segura.  
-    A operação recomendada em produção deve ser mantida em **$x \\le 35\\text{ req/s}$**, garantindo latências abaixo de $67\\text{ ms}$ e margem de segurança de $30\\%$ contra rajadas de tráfego.
+    st.info(r"""
+    **🎯 Conclusão Executiva:** Capacidade teórica ($50\text{ req/s}$) NÃO é capacidade operacional segura.  
+    A operação recomendada em produção deve ser mantida em **$x \le 35\text{ req/s}$**, garantindo latências abaixo de $67\text{ ms}$ e margem de segurança de $30\%$ contra rajadas de tráfego.
     """)
 
 # ==========================================
