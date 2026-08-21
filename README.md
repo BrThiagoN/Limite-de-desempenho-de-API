@@ -180,7 +180,7 @@ Com base na investigação matemática, a equipe conclui:
 | :--- | :---: |
 | **Thiago Gomes Nascimento** | 569436 |
 | **Gabriel Henrique Ongarelli Reis** | 572636 |
-| **Vinicius Scalone Ramires** | 573783 |
+| **Lucas Rodrigues Dos Santos** | 571778 |
 | **Matheus de Amorim Brito** | 572435 |
 | **Eduardo Felix Frois Silva** | 574103 |
 
