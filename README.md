@@ -8,19 +8,27 @@
 
 > **Projeto Aplicado de Modelagem Matemática: Da observação de desempenho à tomada de decisão técnica**  
 > **Docente:** Prof. Jones Egydio — FIAP 2026  
-> **Curso:** Engenharia de Software  
+> **Curso:** Engenharia de Software | **Disciplina:** Differentiated Problem Solving (DPS)  
+
+### 👥 Integrantes do Grupo:
+- **Thiago Gomes Nascimento** — RM 569436
+- **Gabriel Henrique Ongarelli Reis** — RM 572636
+- **Vinicius Scalone Ramires** — RM 573783
+- **Matheus de Amorim Brito** — RM 572435
+- **Eduardo Felix Frois Silva** — RM 574103
 
 ---
 
 ## 📌 Sumário
-1. [Contexto do Problema & Challenge](#-contexto-do-problema--challenge)
-2. [Fundamentação Matemática & Teoria de Limites](#-fundamentação-matemática--teoria-de-limites)
-3. [Estrutura do Repositório](#-estrutura-do-repositório)
-4. [Instalação e Pré-requisitos](#-instalação-e-pré-requisitos)
-5. [Como Executar o Jupyter Notebook](#-como-executar-o-jupyter-notebook)
-6. [Como Executar a Aplicação Streamlit](#-como-executar-a-aplicação-streamlit)
-7. [Resultados Numéricos & Simulação](#-resultados-numéricos--simulação)
-8. [Tomada de Decisão & Arquitetura de Software](#-tomada-de-decisão--arquitetura-de-software)
+1. [Integrantes do Grupo](#-integrantes-do-grupo)
+2. [Contexto do Problema & Challenge](#-contexto-do-problema--challenge)
+3. [Fundamentação Matemática & Teoria de Limites](#-fundamentação-matemática--teoria-de-limites)
+4. [Estrutura do Repositório](#-estrutura-do-repositório)
+5. [Instalação e Pré-requisitos](#-instalação-e-pré-requisitos)
+6. [Como Executar o Jupyter Notebook](#-como-executar-o-jupyter-notebook)
+7. [Como Executar a Aplicação Streamlit](#-como-executar-a-aplicação-streamlit)
+8. [Resultados Numéricos & Simulação](#-resultados-numéricos--simulação)
+9. [Tomada de Decisão & Arquitetura de Software](#-tomada-de-decisão--arquitetura-de-software)
 
 ---
 
@@ -166,8 +174,17 @@ Com base na investigação matemática, a equipe conclui:
 
 ---
 
-## 👥 Equipe & Docente
+## 👥 Equipe & Integrantes
+
+| Nome do Aluno | RM |
+| :--- | :---: |
+| **Thiago Gomes Nascimento** | 569436 |
+| **Gabriel Henrique Ongarelli Reis** | 572636 |
+| **Vinicius Scalone Ramires** | 573783 |
+| **Matheus de Amorim Brito** | 572435 |
+| **Eduardo Felix Frois Silva** | 574103 |
 
 - **Instituição:** FIAP — 2026
+- **Curso:** Engenharia de Software
 - **Disciplina:** Differentiated Problem Solving (DPS)
 - **Docente:** Prof. Jones Egydio

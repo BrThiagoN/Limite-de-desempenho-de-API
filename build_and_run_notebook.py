@@ -15,8 +15,16 @@ def create_and_execute_notebook():
 **Disciplina:** Differentiated Problem Solving (DPS)  
 **Instituição:** FIAP — 2026  
 **Docente:** Prof. Jones Egydio  
+**Curso:** Engenharia de Software  
 **Tema:** Projeto Aplicado de Modelagem Matemática — *Da observação de desempenho à tomada de decisão técnica*  
 **Pontuação Total:** 10,0 pontos  
+
+### 👥 Integrantes do Grupo:
+- **Thiago Gomes Nascimento** — RM: 569436
+- **Gabriel Henrique Ongarelli Reis** — RM: 572636
+- **Vinicius Scalone Ramires** — RM: 573783
+- **Matheus de Amorim Brito** — RM: 572435
+- **Eduardo Felix Frois Silva** — RM: 574103
 
 ---
 

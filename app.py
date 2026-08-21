@@ -116,6 +116,16 @@ with st.sidebar:
     **Latência em Repouso ($f(0)$):** $20\\text{ ms}$
     """)
     
+    st.divider()
+    st.markdown("### 👥 Integrantes")
+    st.markdown("""
+    - **Thiago Gomes Nascimento** (RM 569436)
+    - **Gabriel Henrique Ongarelli Reis** (RM 572636)
+    - **Vinicius Scalone Ramires** (RM 573783)
+    - **Matheus de Amorim Brito** (RM 572435)
+    - **Eduardo Felix Frois Silva** (RM 574103)
+    """)
+    
     st.info("💡 **Dica Técnica:** O colapso assintótico ocorre em $x \\to 50^-$, onde a fila cresce infinitamente.")
 
 # ==========================================
@@ -390,8 +400,12 @@ with tab_arch:
 # ==========================================
 st.divider()
 st.markdown("""
-<div style="text-align: center; color: #6B7280; font-size: 0.9rem;">
-    <strong>DPS — Differentiated Problem Solving</strong> | Checkpoint 4 — Modelagem Matemática & Streamlit | FIAP 2026<br>
-    Prof. Jones Egydio
+<div style="text-align: center; color: #4B5563; font-size: 0.95rem; margin-bottom: 8px;">
+    <strong>👥 Integrantes do Grupo:</strong><br>
+    Thiago Gomes Nascimento (RM 569436) • Gabriel Henrique Ongarelli Reis (RM 572636)<br>
+    Vinicius Scalone Ramires (RM 573783) • Matheus de Amorim Brito (RM 572435) • Eduardo Felix Frois Silva (RM 574103)
+</div>
+<div style="text-align: center; color: #6B7280; font-size: 0.85rem;">
+    <strong>DPS — Differentiated Problem Solving</strong> | Checkpoint 4 — Modelagem Matemática & Streamlit | <strong>FIAP 2026</strong> | Prof. Jones Egydio
 </div>
 """, unsafe_allow_html=True)
