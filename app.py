@@ -83,7 +83,7 @@ dados_empiricos = pd.DataFrame({
 # Barra Lateral (Controles e Parâmetros)
 # ==========================================
 with st.sidebar:
-    st.image("https://img.shields.io/badge/FIAP-DPS%20Checkpoint%204-blue?style=for-the-badge", use_container_width=True)
+    st.image("https://img.shields.io/badge/FIAP-DPS%20Checkpoint%204-blue?style=for-the-badge", width='stretch')
     st.title("⚙️ Parâmetros da API")
     st.markdown("Ajuste a carga simulada e os parâmetros de infraestrutura.")
     
@@ -280,7 +280,7 @@ with tab_sim:
         height=550
     )
     
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
     
     # Caixa explicativa da simulação
     st.markdown(f"""
@@ -359,7 +359,7 @@ with tab_table:
         })
         
     df_resultado = pd.DataFrame(tabela_dados)
-    st.dataframe(df_resultado, use_container_width=True)
+    st.dataframe(df_resultado, width='stretch')
     
     st.markdown("""
     **💡 Observação Chave:** Note como a variação de $48.0$ para $49.9\\text{ req/s}$ (apenas $+1.9\\text{ req/s}$) faz a latência saltar de **500 ms** para **10.000 ms** ($10\\text{ segundos}$)! 
