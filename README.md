@@ -11,12 +11,13 @@
 > **Curso:** Engenharia de Software | **Disciplina:** Differentiated Problem Solving (DPS)  
 
 ### 👥 Integrantes do Grupo:
-- **Thiago Gomes Nascimento** — RM: 569436
-- **Gabriel Henrique Ongarelli Reis** — RM: 572636
-- **Vinicius Scalone Ramires** — RM: 573783
-- **Matheus de Amorim Brito** — RM: 572435
-- **Eduardo Felix Frois Silva** — RM: 574103
-- **Lucas Rodrigues dos Santos** — RM: 571778
+- **Thiago Gomes Nascimento** — RM 569436
+- **Gabriel Henrique Ongarelli Reis** — RM 572636
+- **Vinicius Scalone Ramires** — RM 573783
+- **Matheus de Amorim Brito** — RM 572435
+- **Eduardo Felix Frois Silva** — RM 574103
+- **Lucas Rodrigues dos Santos** — RM 571778
+
 
 ---
 

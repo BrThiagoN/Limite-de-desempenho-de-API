@@ -98,10 +98,6 @@ dados_empiricos = pd.DataFrame({
 # Barra Lateral (Controles e Parâmetros)
 # ==========================================
 with st.sidebar:
-<<<<<<< HEAD
-    st.image("https://img.shields.io/badge/FIAP-DPS%20Checkpoint%204-blue?style=for-the-badge", width='stretch')
-    st.title("⚙️ Parâmetros da API")
-=======
     st.markdown("""
     <div style="background-color: #1E3A8A; color: white; padding: 8px 12px; border-radius: 6px; font-weight: bold; text-align: center; margin-bottom: 15px;">
         🎓 FIAP — DPS Checkpoint 4 (2026)
@@ -109,7 +105,6 @@ with st.sidebar:
     """, unsafe_allow_html=True)
 
     st.title("⚙️ Parâmetros de Simulação")
->>>>>>> 88767be811eb7247abc77a39868582e43079c1ef
     st.markdown("Ajuste a carga simulada e os parâmetros de infraestrutura.")
 
     modo_simulacao = st.radio(
@@ -352,16 +347,6 @@ with tab_sim:
         margin=dict(l=40, r=40, t=60, b=40),
         height=540
     )
-<<<<<<< HEAD
-    
-    st.plotly_chart(fig, width='stretch')
-    
-    # Caixa explicativa da simulação
-    st.markdown(f"""
-    > **🔍 Análise do Ponto Atual:** Para uma taxa de **{carga_selecionada:.1f} req/s**, o tempo médio previsto de resposta é de **{tempo_calculado:.2f} ms**.  
-    > O sistema está operando a **{utilizacao:.1f}%** de sua capacidade máxima teórica. {zona_msg}
-    """)
-=======
 
     st.plotly_chart(fig, use_container_width=True)
 
@@ -373,7 +358,6 @@ with tab_sim:
         > **🔍 Diagnóstico Operacional:** Para **{carga_selecionada:.1f} req/s** distribuídos em **{num_pods} réplica(s)** ({carga_efetiva_pod:.1f} req/s/pod), a latência média estimada é de **{tempo_calculado:.2f} ms** (com **p95 = {p95_calculado:.2f} ms** e **p99 = {p99_calculado:.2f} ms**).  
         > Utilização do cluster: **{utilizacao:.1f}%**. {zona_msg}
         """)
->>>>>>> 88767be811eb7247abc77a39868582e43079c1ef
 
 # ----------------------------------------------------
 # ABA 2: Fundamentação Matemática & Derivadas
@@ -463,18 +447,10 @@ with tab_table:
         })
 
     df_resultado = pd.DataFrame(tabela_dados)
-<<<<<<< HEAD
-    st.dataframe(df_resultado, width='stretch')
-    
-    st.markdown("""
-    **💡 Observação Chave:** Note como a variação de $48.0$ para $49.9\\text{ req/s}$ (apenas $+1.9\\text{ req/s}$) faz a latência saltar de **500 ms** para **10.000 ms** ($10\\text{ segundos}$)! 
-    Isso evidencia a natureza não-linear e explosiva da curva assintótica.
-=======
     st.dataframe(df_resultado, use_container_width=True)
 
     st.markdown(r"""
     **💡 Destaque Analítico:** Note como uma variação de apenas $+0.9\text{ req/s}$ (de $49.0$ para $49.9\text{ req/s}$) faz a latência média saltar de **$1.000\text{ ms}$** para **$10.000\text{ ms}$** ($10\text{ segundos}$), e o **p99** atingir **$46\text{ segundos}$**!
->>>>>>> 88767be811eb7247abc77a39868582e43079c1ef
     """)
 
 # ----------------------------------------------------
