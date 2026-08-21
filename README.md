@@ -16,6 +16,7 @@
 - **Vinicius Scalone Ramires** — RM 573783
 - **Matheus de Amorim Brito** — RM 572435
 - **Eduardo Felix Frois Silva** — RM 574103
+- **Lucas Rodrigues dos Santos** — RM 571778
 
 
 ---
@@ -193,9 +194,10 @@ Com base na investigação matemática, a equipe conclui:
 | :--- | :---: |
 | **Thiago Gomes Nascimento** | 569436 |
 | **Gabriel Henrique Ongarelli Reis** | 572636 |
-|- **Vinicius Scalone Ramires** — RM 573783
+| **Vinicius Scalone Ramires** | 573783 |
 | **Matheus de Amorim Brito** | 572435 |
 | **Eduardo Felix Frois Silva** | 574103 |
+| **Lucas Rodrigues dos Santos** | 571778 |
 
 - **Instituição:** FIAP — 2026
 - **Curso:** Engenharia de Software

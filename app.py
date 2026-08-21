@@ -166,6 +166,7 @@ with st.sidebar:
     - **Vinicius Scalone Ramires** (RM 573783)
     - **Matheus de Amorim Brito** (RM 572435)
     - **Eduardo Felix Frois Silva** (RM 574103)
+    - **Lucas Rodrigues dos Santos** (RM 571778)
     """)
 
 # ==========================================
@@ -507,8 +508,8 @@ st.divider()
 st.markdown("""
 <div style="text-align: center; color: #4B5563; font-size: 0.95rem; margin-bottom: 8px;">
     <strong>👥 Integrantes do Grupo:</strong><br>
-    Thiago Gomes Nascimento (RM 569436) • Gabriel Henrique Ongarelli Reis (RM 572636)<br>
-    Vinicius Scalone Ramires (RM 573783) • Matheus de Amorim Brito (RM 572435) • Eduardo Felix Frois Silva (RM 574103)
+    Thiago Gomes Nascimento (RM 569436) • Gabriel Henrique Ongarelli Reis (RM 572636) • Vinicius Scalone Ramires (RM 573783)<br>
+    Matheus de Amorim Brito (RM 572435) • Eduardo Felix Frois Silva (RM 574103) • Lucas Rodrigues dos Santos (RM 571778)
 </div>
 <div style="text-align: center; color: #6B7280; font-size: 0.85rem;">
     <strong>DPS — Differentiated Problem Solving</strong> | Checkpoint 4 — Modelagem Matemática & Streamlit | <strong>FIAP 2026</strong> | Prof. Jones Egydio
